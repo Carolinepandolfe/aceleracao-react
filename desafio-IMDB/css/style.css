@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    background-image: url(../img/capa-madmax2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav-principal{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 960px
+}
+
+.lista-menu{
+    display: flex;
+    list-style: none;
+}
+
+.lista-menu li{
+    margin: 0 25px;
+}
+
+.lista-menu li a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.usuario{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foto-usuario{
+    border-radius: 100%;
+    margin-right: 15px;
+    overflow: hidden;
+    width: 45px;
+}
+
+.foto-usuario img{
+    height: auto;
+    width: 100%;
+}
+
+.usuario p{
+    color: #fff;
+    font-weight: bold;
+}
