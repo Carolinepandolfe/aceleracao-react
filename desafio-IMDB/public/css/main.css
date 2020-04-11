@@ -1,0 +1,326 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+}
+
+header{
+    align-items: center;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 212, 255, 0) 75% ),url(../img/capa-madmax2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-between;
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+}
+
+
+.nav-principal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-principal .container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container{
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+}
+
+.nav-principal ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-principal li{
+    margin: 0 25px;
+}
+
+.nav-principal li a{
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-principal li a:hover{
+    color:#e4bb23;
+    transition: all 0.2s ease-in-out;
+}
+
+.usuario{
+    align-items: center;
+    display: flex;
+}
+
+.usuario img{
+    border-radius: 100%;
+    width: 45px;
+    margin-right: 15px;
+}
+
+.usuario p{
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.titulo{
+    color: #fff;
+    font-size: 6.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.generos{
+    display: flex;
+    margin: 15px 0 30px;
+    font-size: 13px;
+
+}
+
+.generos a{
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-trailer{
+    padding: 15px 50px;
+    color: #000;
+    font-size: 1.5em;
+    text-decoration: none;
+    background-color: #e4bb23;
+    border-radius: 40px;
+    position: relative;
+}
+
+.btn-trailer i{
+    font-size: 1.5em;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+
+.header-info{
+    padding: 20px 0;
+    font-size: 1.4em;
+    color: #fff;
+}
+
+.header-info p:nth-child(2){
+    color: #bc9a1d;
+}
+
+.catalogo{
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+.menu-catalogo{
+    width: 100%;
+}
+
+.container .lista-catalogo{
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+}
+
+
+.lista-catalogo li {
+    margin: 0 20px;
+    padding: 20px;
+}
+
+.lista-catalogo a{
+    color: #e4bb23;
+    padding: 25px 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
+.cartazes-lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 100%;    
+}
+
+.cartazes-lista li{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    overflow: hidden;
+    width: 24%;
+}
+
+.cartaz figure{
+    height: auto;
+    margin:0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.cartaz figure img{
+    width: 100%;
+    height: auto;
+}
+
+.info-filme{
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cartazes-lista li:hover div {
+    opacity: 1;
+}
+
+.cartazes-lista li:hover {
+    transform: scale(1);
+}
+
+.info-filme h3{
+    color: #e4bb23;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.info-filme a{
+    color: #fff;
+    font-size: 5em;
+}
+
+.info-filme i{
+    font-size: 1em;
+}
+
+.info-filme a:hover{
+    color: #e4bb23;
+}
+
+.filme-resumo{
+    padding: 10px;
+}
+
+.filme-resumo h3{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.resumo-genero{
+    margin: 10px 0;
+    display: flex;
+}
+
+.filme-resumo a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #e4bb23;
+}
+
+
+
+.nota{
+    align-items: center;
+    display: flex;
+    font-size: 2em;
+    font-weight: bold;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.nota i {
+    color: #ccc;
+    cursor: pointer;
+}
+
+.nota i:hover{
+    color: #ba0c0c;
+}
+
+footer{
+    background-color: #fff;
+    color: #bababa;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+footer .container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+footer li{
+    margin: 0 20px;
+}
+
+footer a{
+    color: #ccc;
+    font-size: 2.5em;
+    text-decoration: none;
+}
+
+.fa-twitter:hover{
+    color: #50abf1;
+}
+
+.fa-facebook-official:hover{
+    color: #5061a6;
+}
+
+.fa-instagram:hover{
+    color:#c84e4b;
+}
