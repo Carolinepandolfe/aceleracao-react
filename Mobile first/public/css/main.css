@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+
+body{
+	background-color: #FAFAFA;
+	color: #000;
+	padding-top: 60px;
+}
+
+.topbar{
+	background-color: white;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+	display: flex;
+	padding: 8px 16px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+.topbar .container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.container{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.topbar__logo{
+	height: 40px;
+}
+
+.topbar__logo img{
+	height: 100%;
+}
+
+button{
+	background-color: transparent;
+	border: none;
+}
+
+.topbar__icon{
+	font-size: 16px;
+}
+
+.stories{
+	display: flex;
+	background-color: white;
+}
+
+.stories .stories__user{
+	align-items: center;
+	justify-content: center;
+	height: 78px;
+	margin: 0 8px;
+	width: 78px;
+	
+}
+
+.stories__user{
+	display: flex;
+	border-radius: 100%;
+	overflow: hidden;	
+}
+
+.storie__user-modifier{
+	background: linear-gradient(45deg, rgba(245,160,77,1) 0%, rgba(160,15,139,1) 100%)
+}
+
+
+.stories__user span{
+	border: 2px solid white;
+	border-radius: 100%;
+	height: 72px;
+	overflow: hidden;
+	width: 72px;
+}
+
+.stories__user img{
+	height: 100%;
+	width: 100%;
+}
+
+.feed{
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+}
+
+.post{
+	border: 1px solid rgba(0, 0, 0, .1);
+	border-radius: 2%;
+	margin-bottom: 30px;
+}
+
+.post__header{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.post__user{
+	align-items: center;
+	display: flex;
+}
+
+.post__foto-perfil{
+	border-radius: 100%;
+	height: 40px;
+	margin-right: 8px;
+	overflow: hidden;
+	width: 40px;
+}
+
+.post__foto-perfil img{
+	height: 100%;
+	width: 100%;
+}
+
+.post__username{
+	color:black;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.post__figure{
+	overflow: hidden;
+	width: 100%;
+	margin: 0;
+}
+
+.post__figure img{
+	width: 100%;
+}
+
+.post__actions{
+	align-items: center;
+	display: flex;
+	padding: 4px 0;
+}
+
+.post__action{
+	font-size: 24px;
+	margin: 0 8px;
+} 
+
+.post__action-modifier{
+	justify-self: flex-end;
+	margin-left: auto;
+}
+
+.post__interacao{
+	background-color: rgba(0, 0, 0, 0.05);
+	padding: 8px;
+}
+
+.post__interacao span{
+	font-size: 12px;
+}
+
+.post__interacao a{
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 728px ){
+	.container{
+		width: 728px;
+	}
+}
