@@ -1,7 +1,7 @@
 # Mobile First: Instagram
   
 ## Deploy
-  [Instagram Codenation]  (https://instagram-acelera-dev.netlify.app/)
+  (https://instagram-acelera-dev.netlify.app/)
 
 ## Objetivo:
 Desenvolver uma versão **mobile first** do Instagram utilizando apenas **HTML5** e **CSS3**.
