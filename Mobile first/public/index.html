@@ -2,7 +2,7 @@
 <html class="no-js" lang="pt-br">
 	<head>
 		<meta charset="utf-8" />
-		<title>Instagram Codenation</title>
+		<title>Intagram Codenation</title>
 		<meta name="description" content="" />
 		<link rel="shortcut icon" type="image/png" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,53 +10,83 @@
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/fontawesome.min.css" />
 		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/darkmode.css">
+		<script src="./js/scripts.js" defer></script>
 	</head>
 	<body>
-		<header class="topbar">
+		<header class="topbar" id="topbar-dark">
 			<div class="container">
 				
 				<a class="topbar__logo" href="#">
-					<img src="./img/instagram-logo.svg" alt="">
-					
+					<img id="logo" src="./img/instagram-logo.svg" alt="">
 				</a>
-							
-				<button class="topbar__icon">
-					<i class="far fa-paper-plane" aria-hidden="true"></i>
-				</button>			
+
+				<div class="topbar__search search-dark">
+					<i class="fas fa-search"></i>
+					Pesquisar
+				</div>
+
+
+				<div class="topbar__btn " id="icon-dark" >
+					<button class="topbar__icon">
+						<i class="fa fa-home" aria-hidden="true"></i>
+					</button>
+								
+					<button class="topbar__icon">
+						<i class="far fa-paper-plane" aria-hidden="true"></i>
+					</button>
+					
+					<button class="topbar__icon">
+						<i class="far fa-compass"></i>
+					</button>
+	
+					<button class="topbar__icon">
+						<i class="far fa-heart"></i>
+					</button>
+					
+				</div>
 			</div>
 			
 		</header>
 		
 		<div class="container">
-			<section class="stories">
-				<a  class="stories__user storie__user-modifier" href="#">
-					<span>
+			<section class="stories" id="stories">
+				<a class="stories__user storie__user-modifier" href="#">
+					<span class="story">
 						<img src="./img/profiles/carol/carol-profile.jpg" alt="">
 					</span>
-				</a>
-
-				<a class="stories__user" href="#">
-					<span>
+				</a>				
+				<a class="stories__user " href="#">
+					<span class="story">
 						<img src="./img/profiles/domino/domino-profile.jpg" alt="">
 					</span>
-				</a>
-				<a class="stories__user" href="#">
-					<span>
+				</a>		
+				
+				<a class="stories__user " href="#">
+					<span class="story">
 						<img src="./img/profiles/gamora/gamora-profile.jpg" alt="">
 					</span>
-				</a>								
+				</a>		
 			</section>
+
+			<div class="container">
+				<label class="switch" >
+					<input type="checkbox" checked>
+					<span class="slider round" id="btn-toggle"></span>
+				  </label>
+				
+			</div>
 		</div>
 
 		<div class="container">
 			<section class="feed">
-				<article class="post">
+				<article class="post font-bold">
 					<header class="post__header">
 						<div class="post__user">
 							<a class="post__foto-perfil" href="#">
 								<img src="./img/profiles/carol/carol-profile.jpg" alt="">
 							</a>
-							<a class="post__username" href="#">Carol Denvers</a>
+							<a class="post__username font"  href="#">Carol Denvers</a>
 						</div>
 
 							<button>
@@ -88,23 +118,23 @@
 								<a class="post__foto-perfil" href="#">
 									<img src="./img/profiles/gamora/gamora-profile.jpg" alt="">
 								</a>
-								<span>
+								<span class="font">
 									curtido por 
-									<a href="#">Gamora</a>
+									<a class=" font" href="#">Gamora</a>
 									e outras 
-									<a href="#">15.358 pessoas</a>
+									<a class=" font" href="#">500.358 pessoas</a>
 								</span>
 							</div>
 						</div>
 				</article>
 				
-				<article class="post">
+				<article class="post font-bold">
 					<header class="post__header">
 						<div class="post__user">
 							<a class="post__foto-perfil" href="#">
 								<img src="./img/profiles/yoda/yoda-profile.jpg" alt="">
 							</a>
-							<a class="post__username" href="#">Mestre Yoda</a>
+							<a class="post__username font" href="#">Mestre Yoda</a>
 						</div>
 
 							<button>
@@ -119,15 +149,15 @@
 
 						<nav class="post__actions">
 							<button class="post__action">
-								<i class="far fa-heart"></i>
+								<i class="far fa-heart font"></i>
 							</button>
 
 							<button class="post__action">
-								<i class="far fa-comment"></i>
+								<i class="far fa-comment font"></i>
 							</button>
 
 							<button class="post__action post__action-modifier">
-								<i class="far fa-bookmark"></i>
+								<i class="far fa-bookmark font"></i>
 							</button>
 						</nav>
 
@@ -136,11 +166,11 @@
 								<a class="post__foto-perfil" href="#">
 									<img src="./img/profiles/black-panther/black-panther-profile.jpg" alt="">
 								</a>
-								<span>
+								<span class="font">
 									curtido por 
-									<a href="#">T'Challa</a>
+									<a class="font-bold  font" href="#">T'Challa</a>
 									e outras 
-									<a href="#">10.000 pessoas</a>
+									<a class="font-bold  font" href="#">10.000 pessoas</a>
 								</span>
 							</div>
 						</div>
@@ -152,7 +182,7 @@
 							<a class="post__foto-perfil" href="#">
 								<img src="./img/profiles/gamora/gamora-profile.jpg" alt="">
 							</a>
-							<a class="post__username" href="#">Gamora Zen</a>
+							<a class="post__username font" href="#">Gamora Zen</a>
 						</div>
 
 							<button>
@@ -167,15 +197,15 @@
 
 						<nav class="post__actions">
 							<button class="post__action">
-								<i class="far fa-heart"></i>
+								<i class="far fa-heart font"></i>
 							</button>
 
 							<button class="post__action">
-								<i class="far fa-comment"></i>
+								<i class="far fa-comment font"></i>
 							</button>
 
 							<button class="post__action post__action-modifier">
-								<i class="far fa-bookmark"></i>
+								<i class="far fa-bookmark font"></i>
 							</button>
 						</nav>
 
@@ -184,16 +214,17 @@
 								<a class="post__foto-perfil" href="#">
 									<img src="./img/profiles/domino/domino-profile.jpg" alt="">
 								</a>
-								<span>
+								<span class="font">
 									curtido por 
-									<a href="#">Domino</a>
+									<a class=" font" href="#">Domino</a>
 									e outras 
-									<a href="#">12.000 pessoas</a>
+									<a class=" font" href="#">80.000 pessoas</a>
 								</span>
 							</div>
 						</div>
 				</article>	
 				
+
 
 				<article class="post">
 					<header class="post__header">
@@ -201,7 +232,7 @@
 							<a class="post__foto-perfil" href="#">
 								<img src="./img/profiles/domino/domino-profile.jpg" alt="">
 							</a>
-							<a class="post__username" href="#">Domino</a>
+							<a class="post__username font" href="#">Domino</a>
 						</div>
 
 							<button>
@@ -216,15 +247,15 @@
 
 						<nav class="post__actions">
 							<button class="post__action">
-								<i class="far fa-heart"></i>
+								<i class="far fa-heart font"></i>
 							</button>
 
 							<button class="post__action">
-								<i class="far fa-comment"></i>
+								<i class="far fa-comment font"></i>
 							</button>
 
 							<button class="post__action post__action-modifier">
-								<i class="far fa-bookmark"></i>
+								<i class="far fa-bookmark font"></i>
 							</button>
 						</nav>
 
@@ -233,11 +264,11 @@
 								<a class="post__foto-perfil" href="#">
 									<img src="./img/profiles/yoda/yoda-profile.jpg" alt="">
 								</a>
-								<span>
+								<span class="font">
 									curtido por 
-									<a href="#">Mestre Yoda</a>
+									<a class=" font" href="#">Mestre Yoda</a>
 									e outras 
-									<a href="#">14.852 pessoas</a>
+									<a class=" font" href="#">14.852 pessoas</a>
 								</span>
 							</div>
 						</div>
@@ -249,7 +280,7 @@
 							<a class="post__foto-perfil" href="#">
 								<img src="./img/profiles/bruce/bruce-profile.jpg" alt="">
 							</a>
-							<a class="post__username" href="#">Bruce Wayne</a>
+							<a class="post__username font" href="#">Bruce Wayne</a>
 						</div>
 
 							<button>
@@ -259,20 +290,20 @@
 						</header>
 
 						<figure class="post__figure">
-							<img src="./img/profiles/bruce/bruce-4.jpg" alt="">		
+							<img src="./img/profiles/bruce/bruce-4.jpg" alt="">			
 						</figure>
 
 						<nav class="post__actions">
 							<button class="post__action">
-								<i class="far fa-heart"></i>
+								<i class="far fa-heart font"></i>
 							</button>
 
 							<button class="post__action">
-								<i class="far fa-comment"></i>
+								<i class="far fa-comment font"></i>
 							</button>
 
 							<button class="post__action post__action-modifier">
-								<i class="far fa-bookmark"></i>
+								<i class="far fa-bookmark font"></i>
 							</button>
 						</nav>
 
@@ -281,23 +312,23 @@
 								<a class="post__foto-perfil" href="#">
 									<img src="./img/profiles/carol/carol-profile.jpg" alt="">
 								</a>
-								<span>
+								<span class="font">
 									curtido por 
-									<a href="#">Carol Denvers</a>
+									<a class=" font" href="#">Carol Denvers</a>
 									e outras 
-									<a href="#">10.955 pessoas</a>
+									<a class=" font" href="#">10.853 pessoas</a>
 								</span>
 							</div>
 						</div>
 				</article>	
-				
+
 				<article class="post">
 					<header class="post__header">
 						<div class="post__user">
 							<a class="post__foto-perfil" href="#">
 								<img src="./img/profiles/black-panther/black-panther-profile.jpg" alt="">
 							</a>
-							<a class="post__username" href="#">T'Challa</a>
+							<a class="post__username font" href="#">T'Challa</a>
 						</div>
 
 							<button>
@@ -307,20 +338,20 @@
 						</header>
 
 						<figure class="post__figure">
-							<img src="./img/profiles/black-panther/black-panther-3.jpg" alt="">		
+							<img src="./img/profiles/black-panther/black-panther-3.jpg" alt="">			
 						</figure>
 
 						<nav class="post__actions">
 							<button class="post__action">
-								<i class="far fa-heart"></i>
+								<i class="far fa-heart font"></i>
 							</button>
 
 							<button class="post__action">
-								<i class="far fa-comment"></i>
+								<i class="far fa-comment font"></i>
 							</button>
 
 							<button class="post__action post__action-modifier">
-								<i class="far fa-bookmark"></i>
+								<i class="far fa-bookmark font"></i>
 							</button>
 						</nav>
 
@@ -329,11 +360,11 @@
 								<a class="post__foto-perfil" href="#">
 									<img src="./img/profiles/yoda/yoda-profile.jpg" alt="">
 								</a>
-								<span>
+								<span class="font">
 									curtido por 
-									<a href="#">Mestre Yoda</a>
+									<a class=" font" href="#">Mestre Yoda</a>
 									e outras 
-									<a href="#">16.087 pessoas</a>
+									<a class=" font" href="#">16.853 pessoas</a>
 								</span>
 							</div>
 						</div>

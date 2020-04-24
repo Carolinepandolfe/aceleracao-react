@@ -21,9 +21,11 @@ body{
 	position: fixed;
 	width: 100%;
 	top: 0;
+	z-index: 10;
 }
 
 .topbar .container{
+	align-items: center;
 	display: flex;
 	justify-content: space-between;
 }
@@ -39,6 +41,28 @@ body{
 
 .topbar__logo img{
 	height: 100%;
+}
+
+.topbar__search{
+	align-items: center;
+	border: 1px solid rgba(0, 0, 0, .1);
+	border-radius: 2%;
+	color: rgba(0, 0, 0, 0.459) ;
+	display: flex;
+	font-size: 14px;
+	justify-content: center;
+	height: 25px;
+	width: 30%;
+	visibility: hidden;
+}
+
+.topbar__search .fa-search{
+	margin-right: 10px;
+}
+
+.topbar__btn{
+	align-items: center;
+	display: flex;
 }
 
 button{
@@ -73,7 +97,6 @@ button{
 .storie__user-modifier{
 	background: linear-gradient(45deg, rgba(245,160,77,1) 0%, rgba(160,15,139,1) 100%)
 }
-
 
 .stories__user span{
 	border: 2px solid white;
@@ -172,8 +195,13 @@ button{
 	text-decoration: none;
 }
 
+
+
 @media screen and (min-width: 728px ){
 	.container{
 		width: 728px;
+	}
+	.topbar__search{
+		visibility: visible;
 	}
 }
